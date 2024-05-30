@@ -222,9 +222,11 @@ const data = [
 
 document.querySelector(".Hamburger").addEventListener("click", () => {
   document.querySelector(".Sliding-NavBar").style.right = "0vw";
+  document.querySelector(".web-page").style.display = 'none';
 });
 document.querySelector(".fa-x").addEventListener("click", () => {
   document.querySelector(".Sliding-NavBar").style.right = "100vw";
+  document.querySelector(".web-page").style.display = 'block';
 });
 document.querySelector(".fa-caret-down").addEventListener("click", (e) => {
   if (pointerAbove === false) {
